@@ -4,7 +4,9 @@ LABEL authors="leovuo"
 WORKDIR /usr/src/app
 RUN yum update -y && \
     yum install -y maven
-COPY . .
+
+COPY pom.xml .
+COPY src ./src
 
 RUN mvn clean package
 
