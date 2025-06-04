@@ -8,6 +8,13 @@ public class Cow {
     }
 
     public void say(){
-        System.out.println(wordlist.getRandomWordFromList());
+        StringBuilder sb = new StringBuilder();
+        sb.append("((...))\n");
+        sb.append("( o o )\n");
+        sb.append(" \\   /\n");
+        sb.append("  ^_^        ");
+        sb.append(wordlist.getRandomWordFromList()).append("\n");
+
+        System.out.println(sb.toString());
     }
 }
