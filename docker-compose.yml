@@ -1,0 +1,6 @@
+services:
+  moo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: moo
